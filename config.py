@@ -1,1 +1,1 @@
-mail_password = '4r428y9z575h7w26'
+mail_password = 'your-mail-password'
