@@ -1,4 +1,4 @@
-from migrate import db, create_app, Member
+from migrate import db, create_app, Member, Order
 
 app = create_app()
 
@@ -15,6 +15,10 @@ with app.app_context():
     # Fetch and print Customer data
     customers = Member.query.all()
     display_table_data("Member", customers, ['id', 'name'])
+
+    # Fetch and print Customer data
+    orders = Order.query.all()
+    display_table_data("Order", orders, ['id', 'total'])
 
     # # Order_product table
     # stmt = order_product.select()
